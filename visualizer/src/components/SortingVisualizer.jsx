@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { mergeSort } from "../SortingAlgorithms";
 import "./SortingVisualizer.css";
 
 const SortingVisualizer = () => {
@@ -28,6 +29,7 @@ const SortingVisualizer = () => {
   return (
     <div>
       <button onClick={resetArray}>Generate New Array</button>
+      <button onClick={() => mergeSort(array)}>Merge Sort</button>
       <div className="array-container">
         {array.map((val, idx) => (
           <div
