@@ -1,0 +1,14 @@
+.array-container {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+}
+
+.array-bar {
+  width: 2px;
+  background-color: violet;
+  display: inline-block;
+  margin: 0px 1px;
+}
